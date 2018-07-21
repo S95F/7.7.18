@@ -36,7 +36,6 @@ public class healthbar : MonoBehaviour {
 		// aquires values from the object
 		hbar barvars = bars [target].GetComponent<hbar> ();
 		float curhp = barvars.curhp;
-		float maxhp = barvars.maxhp;
 		// decrements and makes sure we dont go under
 		curhp -= Mathf.Abs(dmg);
 		if (curhp < 0)
